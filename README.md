@@ -1,5 +1,7 @@
 # EJS Custom Activity
 
+ss
+
 ## Installation
 
 First, install all dependencies by running the `npm i` command
@@ -34,4 +36,5 @@ Finally, run in development mode using `npm run dev` command
 - RETRY_DELAY - How long, in milliseconds, to wait before each rest activity in the journey is retried. Must be from 0 milliseconds to 10,000 milliseconds. Default is 10,000 milliseconds.
 - TIMEOUT - How long, in milliseconds, before each rest activity in the journey times out. Must be from 1,000 milliseconds to 100,000 milliseconds. Default is 100,000 milliseconds.
 - IP_CHECK_DISABLED - Set to TRUE if you want to disable the IP check for application endpoints. Defaults to FALSE.
+
 # SFMC-custom-activity

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles/salesforce-lightning-design-system.min.css" />
+  <link rel="stylesheet" href="/styles/custom.css" />
+  <script src="javascript/libs/jquery.min.js"></script>
+  <script src="javascript/libs/jquery.validate.min.js"></script>
+  <script src="javascript/libs/postmonger.js"></script>
+  <script src="javascript/libs/library.js"></script>
+  <script src="javascript/customActivity.js" defer></script>
+  
+  <title>
+    <%=title %>
+  </title>
+</head>
+
+<body id="body">
+  <input type="hidden" id="access_token" value="<%=accessToken %>"></input>
+
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <a class="slds-card__header-link slds-truncate"><span>CUSTOM ACTIVITY
+              </span></a>
+          </h2>
+        </div>
+      </header>
+    </div>
+  </article>
+
+  <h1 style="margin-top: 20px;">Hello Marketing Cloud developers</h1>
+
+  <div class="form-style-6">
+    <form >
+      <label for="camp-id">Campaign id :</label>
+      <input type="text" name="camp-id" id="camp-id" required />
+      <div id="e-camp-id" class="emsg"></div>
+
+      <label for="camp-name">Number :</label>
+      <input type="text" name="camp-name" id="camp-name" required />
+      <div id="e-camp-name" class="emsg"></div>
+
+      <label for="comm-type">Communication type :</label>
+      <select name="comm-type" id="comm-type" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="email">E-mail</option>
+        <option value="phone">Phone</option>
+        <option value="whatsapp">Whatsapp</option>
+      </select>
+      <div id="e-comm-type" class="emsg"></div>
+
+      <button id="save" >SAVE</button>
+    </form>
+  </div>
+</body>
+
+</html>
